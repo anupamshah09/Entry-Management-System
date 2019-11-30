@@ -11,7 +11,7 @@ Given the visitors that we have in office and outside, there is a need to for an
 3) [Sign up](https://www.twilio.com/try-twilio) on Twilio and you will get number, account_sid and auth_token to use the following messaging services.
 4) Enter the details about your twilio token and sid,Gmail account,Gmail password,MySQL in the file config.py.
 5) Use the package manager [PIP](https://pip.pypa.io/en/stable/) to install the required packages.
-
+6) Run the entry.py file.
 
 The various technologies used by me in this project are [Twilio](https://www.twilio.com/) for messaging services, MySql ,Python, SMTP for E-mail (ing) services and Tkinter for User Interface.
 
