@@ -44,35 +44,35 @@ def emailv(mail):
 
     msg = "Details of the meeting is\n"
 
-    sql = "UPDATE info SET Check_out=NOW() WHERE visitor_Email=%s and Check_out is NULL"# simple queries of the MySQL
+    sql = "UPDATE information SET check_out=NOW() WHERE vis_Email=%s and check_out is NULL"# simple queries of the MySQL
     cursor2.execute(sql,(mail1,))
     my_db.commit()
 
-    sql1="select visitor_Name from info where visitor_Email=%s"
+    sql1="select vis_name from information where vis_email=%s"
     cursor2.execute(sql1,(mail1,))
     vist_name=""
     for i in cursor2:
         vist_name=str(i[0])
 
-    sql2 = "select visitor_Number from info where visitor_Email=%s"
+    sql2 = "select vis_number from information where vis_email=%s"
     cursor2.execute(sql2, (mail1,))
     vist_number=""
     for i in cursor2:
         vist_number=str(i[0])
 
-    sql3 = "select host_Name from info where visitor_Email=%s"
+    sql3 = "select h_name from information where vis_email=%s"
     cursor2.execute(sql3, (mail1,))
     hst_name=""
     for i in cursor2:
         hst_name= str(i[0])
 
-    sql4= "select checkin from info where visitor_Email=%s"
+    sql4= "select check_in from information where vis_email=%s"
     cursor2.execute(sql4, (mail1,))
     chkin=""
     for i in cursor2:
         chkin = str(i[0])
 
-    sql5 = "select Check_out from info where visitor_Email=%s"
+    sql5 = "select check_out from information where vis_email=%s"
     cursor2.execute(sql5, (mail1,))
     chkout=""
     for i in cursor2:
