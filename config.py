@@ -1,0 +1,7 @@
+EMAIL="Your E-mail ID"
+MYSQL="Your mysql username"
+CONTACT="Your twillio contact number"
+MYSQLPASSWORD="Your MySQL Password"
+PASSWORD="Your E-mail ID Password"
+ACCOUNT="Your twillio account sid"
+TOKEN="Your twillio authorisation token"
